@@ -14,8 +14,8 @@ const app = express();
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use('/campsites', campsiteRouter);
-app.use('/promotion', promotionRouter);
-app.use('/partner', partnerRouter);
+app.use('/promotions', promotionRouter);
+app.use('/partners', partnerRouter);
 
 app.use(express.static(__dirname + '/public'));
 
